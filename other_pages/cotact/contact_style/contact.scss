@@ -1,0 +1,91 @@
+body,
+html {
+  height: auto;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  overflow: scroll;
+  resize: none;
+}
+main {
+  width: 100%;
+  background-color: white;
+  & article {
+    padding: 10px 40px 40px 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 20px 0;
+    }
+  }
+}
+
+.contact-headline {
+  padding: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    & h1 {
+      font-size: 18px;
+    }
+    & h3 {
+      font-size: 16px;
+    }
+  }
+}
+
+.section-contact {
+  padding: 40px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 480px) {
+    border-radius: 0;
+  }
+  & .contact-item {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    & input {
+      width: 60%;
+    }
+    &.privacy {
+      display: flex;
+      justify-content: center;
+      & dt {
+        width: 40px;
+      }
+    }
+    &.submit {
+      display: block;
+      text-align: center;
+      & dd {
+        width: 150px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

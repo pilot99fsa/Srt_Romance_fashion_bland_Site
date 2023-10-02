@@ -1,0 +1,110 @@
+//以下はニュースコンテンツ内の『詳しく見る』をクリックした際に表示するモーダルウインドウのスタイル
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+#card-modal-1,
+#card-modal-2,
+#card-modal-3,
+#card-modal-4,
+#card-modal-5,
+#card-modal-6 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  & .card-modal-wrapper {
+    display: flex;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 20px;
+    height: 320px;
+    background-color: white;
+    box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    animation-name: fade-in;
+    animation-duration: 1s;
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+
+    & .news-card-modal-image,
+    .news-card-modal-description {
+      width: 50%;
+    }
+
+    .news-card-modal-image {
+      min-height: 280px;
+      min-width: 280px;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+      &.image1 {
+        background-image: url(../news-image/summer_campaign.jpg);
+      }
+      &.image2 {
+        background-image: url(../news-image/asian_woman.jpg);
+      }
+      &.image3 {
+        background-image: url(../news-image/momocity.jpg);
+      }
+      &.image4 {
+        background-image: url(../news-image/new_fragrance.jpg);
+      }
+      &.image5 {
+        background-image: url(../news-image/st_romance_ec_site.jpg);
+        background-position: top left;
+      }
+      &.image6 {
+        background-image: url(../news-image/boots.jpg);
+      }
+    }
+
+    .news-card-modal-description {
+      padding: 20px;
+      padding-right: 0;
+      display: block;
+      color: black;
+      position: relative;
+      button {
+        text-decoration: underline;
+        background-color: white;
+        border: none;
+        position: absolute;
+        padding: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .card-modal-wrapper {
+      display: block;
+      width: 300px;
+      height: 500px;
+
+      & .news-card-modal-image,
+      .news-card-modal-description {
+        width: 100%;
+        height: 40%;
+      }
+
+      .news-card-modal-description {
+        padding: 20px 10px 10px 10px;
+      }
+    }
+  }
+}

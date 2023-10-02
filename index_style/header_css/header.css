@@ -1,0 +1,210 @@
+@charset "UTF-8";
+header {
+  position: relative;
+}
+
+#fixed-header {
+  position: fixed;
+  z-index: 101;
+  top: -100vh;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#fixed-header.is-show {
+  top: 0;
+}
+
+.topics-line {
+  padding: 0 5%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.topics-line .slick-slider {
+  width: 100%;
+}
+.topics-line .slick-slider a {
+  margin: auto;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.topics-line .slick-slider a:hover {
+  background-color: black;
+  border-radius: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .topics-line {
+    padding: 0 10px;
+    height: 42px;
+  }
+  .topics-line .slick-text a {
+    font-size: 12px;
+  }
+}
+
+.nav-wrapper-pc {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.nav-wrapper-pc .nav-content {
+  list-style-type: none;
+  display: flex;
+}
+.nav-wrapper-pc .nav-content li {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.nav-wrapper-pc .nav-content li a {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.nav-wrapper-pc .nav-content li a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.nav-wrapper-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-wrapper-pc {
+    display: none;
+  }
+  .nav-wrapper-mobile {
+    display: block;
+  }
+}
+/* ハンバーガーボタン */
+.nav-wrapper-mobile {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  right: 0;
+  border-radius: 1px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.hamburger__line--1 {
+  top: 1px;
+}
+
+.hamburger__line--2 {
+  top: 9px;
+}
+
+.hamburger__line--3 {
+  top: 17px;
+}
+
+/*ハンバーガーがクリックされたら*/
+.open .hamburger__line--1 {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+.open .hamburger__line--2 {
+  opacity: 0;
+}
+
+.open .hamburger__line--3 {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+/* 
+sp-nav(ナビ)
+=================================== */
+.sp-nav {
+  position: fixed;
+  right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+  top: 0;
+  width: 50%; /* 出てくるスライドメニューの幅 */
+  height: 100vh;
+  background-color: #000;
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+/*ハンバーガーがクリックされたら右からスライド*/
+.open .sp-nav {
+  right: 0;
+}
+
+.sp-nav {
+  display: flex;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.sp-nav ul li {
+  list-style-type: none;
+}
+.sp-nav ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.sp-nav ul li hr {
+  margin: 20px 0;
+}
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*ハンバーガーメニューが開いたら表示*/
+.open .black-bg {
+  opacity: 0.3;
+  visibility: visible;
+}/*# sourceMappingURL=header.css.map */

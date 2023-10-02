@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=yes"
+    />
+
+    <link rel="canonical" href="#" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="index_style/reset.css" />
+
+    <!-- ヘッダーCSS -->
+    <link rel="stylesheet" href="index_style/header_css/header.css" />
+
+    <!-- 個別ページスタイルのCSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="index_style/main_css/main.css"
+    />
+
+    <!-- フッターCSS -->
+    <link rel="stylesheet" href="index_style/footer_css/footer.css" />
+
+    <!-- Slickのスタイル（CDN） -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- ページ名 -->
+    <title>St.Romance - セントロマンス公式</title>
+  </head>
+
+  <body>
+    <!-- ↓女性モデル背景 & 白背景アニメーション -->
+    <article>
+      <!-- 背景写真 -->
+      <div class="main-background-image"></div>
+      <!-- ページに入った時の白背景のフェードアウトアニメーション -->
+      <div class="fadeout-backgrorund"></div>
+    </article>
+    <!-- ↑女性モデル背景 & 白背景アニメーション -->
+
+    <!-- ↓ヘッダー -->
+
+    <header id="fixed-header">
+      <div class="topics-line">
+        <div class="slick-slider">
+          <div class="slick-text text1">
+            <a href="#">NONOCITYで9,000円以上お買い上げの方は送料無料</a>
+          </div>
+          <div class="slick-text text2">
+            <a href="#">新作のフレグランスが新発売</a>
+          </div>
+          <div class="slick-text text3">
+            <a href="#">セントロマンスの名作ブーツが限定復刻</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ↓PC版ヘッダーナビゲーション -->
+
+      <nav class="nav-wrapper-pc">
+        <ul class="nav-content">
+          <li><a href="./other_pages/news/news.html">NEWS</a></li>
+          <li><a href="./other_pages/catalog/catalog.html">CATALOG</a></li>
+          <li><a href="./other_pages/story/story.html">STORY</a></li>
+          <li><a href="./other_pages/cotact/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- ↑PC版ヘッダーナビゲーション -->
+
+      <!-- ↓モバイル版ヘッダーナビゲーション -->
+
+      <nav class="nav-wrapper-mobile" id="js-nav">
+        <div id="nav-wrapper" class="nav-wrapper">
+          <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+          </div>
+          <nav class="sp-nav">
+            <ul>
+              <li><a href="./other_pages/news/news.html">NEWS</a></li>
+
+              <li>
+                <hr />
+              </li>
+              <li><a href="./other_pages/catalog/catalog.html">CATALOG</a></li>
+
+              <li>
+                <hr />
+              </li>
+              <li><a href="./other_pages/story/story.html">STORY</a></li>
+
+              <li>
+                <hr />
+              </li>
+              <li><a href="./other_pages/cotact/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="black-bg" id="js-black-bg"></div>
+        </div>
+      </nav>
+
+      <!-- ↑モバイル版ヘッダーナビゲーション -->
+    </header>
+    <!-- ↑ヘッダー -->
+
+    <!-- ↓メインコンテンツ -->
+    <main>
+      <!-- ↓ブランドロゴ -->
+      <article class="saint-romance-logo">
+        <div class="logo-area">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 404 72"
+            style="enable-background: new 0 0 404 72"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #f7931e;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M14.4,53.9c4,3.2,10.8,8.4,17.3,8.4c2.8,0,4.9-0.7,6.2-1.8c1.7-1.9,1.2-4-0.2-5.2c-5.3-4.5-21.1-10.7-21.1-21
+C16.6,20.6,32.1,8.9,41,5.1c4.8-2,9.6-2.8,12.9,0.2c2.5,2.3,4.3,5.6,5,8.4c1,4-1.4,7.9-2.9,10c-2.6,3.5-5.5,8.6-6.9,11.1
+c-0.5,0.9-1.1,1.4-2.2,0.3c-1.9-1.9-3.1-5-1-9.7c2.1-4.8,9.6-13.1,7.2-15.6c-3.4-3.5-28,11.8-28.5,24.3
+c-0.3,6.5,12.5,11.8,18.1,15.8c3.8,2.7,3.3,7.3-1.1,12.4c-6,6.9-23.4,8.8-37.5-8.2c-1.1-1.3-0.7-2,0.2-2.3
+C7.6,50.8,11.7,51.7,14.4,53.9z"
+              />
+              <path
+                class="st0"
+                d="M58,23.7c-1-1.4-0.4-2.1,1.1-2c2.8,0.1,5.6-0.1,8.3-0.4c3.1-5.5,5.9-10.2,7.6-12.4c0.9-1.3,1.9-1.2,2.4,0
+c1.1,2.8,1.1,6.1-1.3,11.3c3.9-0.1,5.4,1.7,6.2,3c0.7,1.2,0.3,1.9-1.2,1.9c-2.2-0.3-5.3,0-7.8,0.4c-3.9,6.7-9.6,16.4-13.4,24.8
+c-3.3,7.3-2.2,13.5,2,13.7c4.5,0.2,10.2-6.9,13.9-14.4c0.6-1.2,1.7-1.4,2.1,0c0.5,1.6,0,3.4-1,5.7C75.6,58.2,69,67,61,66.7
+c-6.6-0.2-11.9-7.6-7.1-19.1c2.1-5,6.3-13.4,10.6-21.3C61.1,26.3,58.8,24.8,58,23.7z"
+              />
+              <path
+                class="st0"
+                d="M85.1,57.4c2,0.7,2.6,3.3,1.5,6c-1.1,2.6-3.7,4.2-5.7,3.5s-2.6-3.6-1.5-6C80.6,58.2,83.1,56.7,85.1,57.4z"
+              />
+              <path
+                class="st0"
+                d="M121.7,65.5c-0.4,1-0.9,1.1-1.6,0.4c-1.4-1.5-2.4-4.5-0.9-9.9c2.5-9.1,11.9-28.1,20.7-41.9
+c-3.4-0.3-5.2-1.8-6.4-4c-0.5-1-0.2-1.5,1.1-1.7c8.4-1,15.9-5.1,22.6-5.4c5.1-0.2,9.5,1.3,11.9,8.1c2.1,6,0.7,12.1-3.1,17.2
+c-5.4,7.2-16.2,13.5-27.3,16.1c3.8,4.7,7.4,9.5,9.5,13.7c1.4,2.7,1.8,6.1,0.5,8.1c-0.5,0.8-1,1.1-1.6,0.2
+c-6.6-9-11.8-15.5-16.5-20.7C127.9,51,125,57.3,121.7,65.5z M142.2,24.8c-2.7,4.8-5.2,9-7.9,13.9c22.1-4.9,33.4-19.5,30.5-26.6
+c-2.2-5.6-12.2-0.4-18.8,1.4C146,16.3,144.9,19.8,142.2,24.8z"
+              />
+              <path
+                class="st0"
+                d="M258.2,56.4c-2.8,5.5-9.2,10.7-14.9,10.6c-8.6-0.1-11.6-6.9-8.1-15c3.6-8.4,12.5-19.4,11-20
+c-0.8-0.3-4.3,1-10.7,7.4c-8.2,8.2-13.1,17.7-17.3,27c-0.5,1.2-1.4,1.5-2.3,0.6c-1.6-1.6-2.8-5.4-0.1-12.5c3.2-8.3,13.9-22,12-22.8
+c-1-0.4-6,2.3-12.4,9.3c-5.8,6.3-10.6,15.5-14.6,24.9c-0.4,0.8-0.9,1.1-1.9,0.3c-2.1-1.7-2.6-5.1-1-10.1c1-3.3,3.5-8.4,6.4-14
+c-2.8,1.9-5.8,2.8-9.3,2.5c-2,8.6-8.3,19-15.7,21.4c-3.6,1.2-8.7,1.1-12.7-4.3c-4.3-5.8-2.8-14.6,1.7-22.5
+c3.8-6.7,9.9-12.6,15.9-13c3.1-0.2,4.6,0.7,6.7,3.4c2.4,3.1,5.4,3.6,4.8,11c0,0.5,0,1.1-0.2,1.6c6.4-0.1,12.9-7.5,18-15.6
+c0.6-1,1.6-1,2.2,0c1.6,2.6,1.3,6.5-0.2,10.4c4.5-5,11.8-10.9,15.4-10.8c3.4,0.1,5.1,5.4,3.9,9.8c4.7-4.5,11.4-9.2,14.6-9.1
+c3.6,0.1,4.4,6,2.4,10.8c-1.9,4.5-6.7,11.1-9.1,16c-2.8,5.7-1.5,10.4,2.2,10.2c4-0.2,8.5-6.7,12.3-13.8c0.5-0.9,1.2-0.7,1.7,0
+C259.4,50.8,259.4,54,258.2,56.4z M182,33.6c-2.7,2.3-5.5,5.7-7.7,9.5c-4.4,7.5-5.7,16.6-3.1,18.9c2.7,2.4,8.8-1.3,13.7-10.3
+c1.7-3.1,2.9-6,3.6-8.6C185,41.2,182.2,37.5,182,33.6z M189.9,33.6c-0.5-3.2-2.6-2.7-3,0.3c-0.3,2.1,0.4,5,2.4,6.7
+C189.9,37.7,190.2,35.4,189.9,33.6z"
+              />
+              <path
+                class="st0"
+                d="M291.8,26.6c0.9-1.3,1.7-1.5,2.4-0.6c1.5,1.8,2.3,6.1-0.1,11.1c-2.2,4.5-7.2,12-9.6,17.3
+c-2.5,5.6-2.6,9.9,0.8,9.7c4.1-0.2,9.6-7,13.1-13.9c0.5-0.9,1.2-1,1.6-0.1c0.4,0.9,0.4,3.4-0.9,6.2c-2.6,5.5-8.9,11-14.4,10.7
+c-5.4-0.3-8.2-3.5-8.2-8.2c-3.2,4.1-7.7,7.8-12.5,7.8c-9.3,0-11.2-12.7-2.9-24.8c8.1-11.8,16-16.3,21-16.3c4.3,0,6.3,3.3,6.1,7.2
+C289.5,30.3,290.7,28.2,291.8,26.6z M283.8,30.7c-3.2-0.3-10.5,6.2-16,15.1c-5.3,8.6-6.6,17.4-2.7,17.5c4.1,0.1,9.3-6.3,14.4-15.1
+C285.8,37.2,286.7,31,283.8,30.7z"
+              />
+              <path
+                class="st0"
+                d="M327.1,26c3.3,0.5,6.4,5.4,3.9,10.6c-2.1,4.4-7,11.8-9.3,17c-2.6,5.8-2,10.5,1.6,10.3c4.1-0.2,9-6.8,12.8-13.8
+c0.5-0.9,1.2-0.9,1.7-0.1c0.7,1.1,0.5,3.4-0.9,6.3c-2.7,5.6-9,10.7-14.8,10.7c-8.5,0-10.5-6.2-7.6-14.9
+c3.3-9.8,12.1-20.4,10.3-21.2c-1-0.4-6.8,2.4-13.2,9.4c-5.9,6.4-10.3,16-14.6,25.4c-0.4,0.9-1,1.3-1.9,0.4c-2-2-2.6-5.3-1-10.3
+c2-6.3,9.7-20.2,16-29.5c0.7-1.1,1.5-1,2.1,0c1.5,2.5,1.4,5.9,0.3,9.5C317,31,323.8,25.5,327.1,26z"
+              />
+              <path
+                class="st0"
+                d="M365.1,32.1c2.1,4.2-1.9,9.5-3.9,14.9c-0.4,1.2-0.8,1.5-2.1,0.8c-2.4-1.2-3.8-4.2-2.4-8.7
+c1.1-3.6,4.1-7.9,2.7-9c-1.7-1.4-9.2,5-13.7,14.1c-5.5,11.3-3.4,19.6,2.5,19.7c8.4,0.1,15.6-7.9,19.7-14.2c0.5-0.8,1.4-0.9,1.8,0.1
+c0.3,0.8-0.1,3.3-1.8,6c-3.8,5.9-11.7,10.8-19.3,10.9c-12.7,0.2-17-12.2-10.5-25.1c6.4-12.6,16.5-18,21.5-15
+C362.3,28.2,363.9,29.8,365.1,32.1z"
+              />
+              <path
+                class="st0"
+                d="M379.7,63.9c8.3,0.4,15.6-7.6,19.9-14.2c0.5-0.8,1.3-0.8,1.7,0.1c0.4,0.8,0.1,3.6-1.7,6.2
+c-4.2,6.1-11.9,10.7-19.6,10.8c-12.7,0.2-17.1-12.3-10.6-25.2c6.5-12.9,16.7-18.1,21.7-15.2c2.5,1.5,4.3,3,5.9,5.2
+c1.8,2.4,1,8.5-3.2,13.6c-4.9,6-11.6,8.6-18.6,2.9C372,57.3,374.4,63.6,379.7,63.9z M388,40.9c3.2-4.2,5.4-9.4,4-10.5
+c-2.1-1.7-10.4,4.3-15.1,13.8c-0.3,0.6-0.6,1.2-0.8,1.7C381,49,385.1,44.7,388,40.9z"
+              />
+            </g>
+          </svg>
+        </div>
+      </article>
+      <!-- ↑ブランドロゴ -->
+
+      <!-- ↓アコーディオンメニューエリア -->
+
+      <!-- &ensp;：半角スペースより間隔がやや広い空白
+             &emsp;：全角スペースとほぼ同じサイズの空白　-->
+
+      <article class="romance-menu">
+        <!-- ↓ファッションエリア -->
+
+        <!-- アコーディオン第1階層 -->
+        <div class="acordion-item acordion">FASHON</div>
+        <ul>
+          <!-- アコーディオン第2階層 -->
+          <li class="acordion-shadow">
+            &ensp;WOMEN'S
+            <ul>
+              <!-- アコーディオン第3階層 -->
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;TOPS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;SHIRTS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;DRESS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;SKIRT</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;JACKETS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;BOTTOMS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;UNDERWEAR</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;HEELS</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- アコーディオン第2階層 -->
+          <li class="acordion-shadow">
+            &ensp;MEN'S
+            <ul>
+              <!-- アコーディオン第3階層 -->
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;TOPS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;SHIRTS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;JACKETS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;BOTTOMS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;UNDERWEAR</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- アコーディオン第2階層 -->
+          <li class="acordion-shadow">
+            &ensp;KIDS
+            <ul>
+              <!-- アコーディオン第3階層 -->
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;TOPS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;JACKETS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;BOTTOMS</a>
+              </li>
+              <li>
+                <a href="./other_pages/catalog/catalog.html">&emsp;UNDERWEAR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- ↑ファッションエリア -->
+
+        <!-- ↓アクセサリーエリア -->
+
+        <!-- アコーディオン第1階層 -->
+        <div class="acordion-item acordion">ACCESSORIES</div>
+        <ul class="acordion-shadow">
+          <!-- アコーディオン第2階層 -->
+          <li><a href="./other_pages/catalog/catalog.html">&ensp;BAG</a></li>
+          <li><a href="./other_pages/catalog/catalog.html">&ensp;CAP</a></li>
+          <li><a href="./other_pages/catalog/catalog.html">&ensp;SHOES</a></li>
+          <li>
+            <a href="./other_pages/catalog/catalog.html">&ensp;JEWELRY</a>
+          </li>
+          <li>
+            <a href="./other_pages/catalog/catalog.html">&ensp;EYE WEAR</a>
+          </li>
+          <li><a href="./other_pages/catalog/catalog.html">&ensp;SOCKS</a></li>
+        </ul>
+        <!-- ↑アクセサリーエリア -->
+
+        <!-- ↓美容エリア -->
+
+        <!-- アコーディオン第1階層 -->
+        <div class="acordion-item acordion">BEAUTY</div>
+        <ul class="acordion-shadow">
+          <!-- アコーディオン第2階層 -->
+          <li>
+            <a href="./other_pages/catalog/catalog.html">&ensp;SKINCARE</a>
+          </li>
+          <li>
+            <a href="./other_pages/catalog/catalog.html">&ensp;FRAGRANCE</a>
+          </li>
+          <li><a href="./other_pages/catalog/catalog.html">&ensp;MAKEUP</a></li>
+        </ul>
+        <!-- ↑美容エリア -->
+
+        <!-- アコーディオン第1階層(外部ストアリンクエリア)-->
+        <div class="acordion-item">
+          <a
+            href="https://ecommerce-site-teal-iota.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >STORE</a
+          >
+        </div>
+      </article>
+      <!-- ↑アコーディオンメニューエリア -->
+
+      <!-- ↓注目の商品エリア -->
+
+      <article class="iconic-collection-wrapper">
+        <div class="iconic-collection-area">
+          <a class="iconic-collection ic1" href="">Dress</a>
+          <a class="iconic-collection ic2" href="">Heels</a>
+          <a class="iconic-collection ic3" href="">MakeUp</a>
+        </div>
+      </article>
+      <!-- ↑注目の商品エリア -->
+    </main>
+    <!-- ↑メインコンテンツ -->
+
+    <!-- ↓フッター -->
+
+    <footer>
+      <!-- ↓フッター内 上段 SNSリンクエリア -->
+
+      <article class="footer-top">
+        <div class="footer-sns-headline">
+          <h2>FOLLOW US</h2>
+        </div>
+        <div class="sns-link-wrpper">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="sns_favicon"
+              src="image/SNS_logos/Instagram_Glyph_Gradient.png"
+              alt="instagram"
+          /></a>
+          <a href="#" target="_blank" rel="noopene noreferrerr"
+            ><img
+              class="sns_favicon"
+              src="image/SNS_logos/f_logo_RGB-Blue_1024.png"
+              alt="facebook"
+          /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="sns_favicon"
+              src="image/SNS_logos/LINE_Brand_icon.png"
+              alt="LINE"
+          /></a>
+        </div>
+      </article>
+      <!-- ↑フッター内 上段 SNSリンクエリア -->
+
+      <!-- ↓フッター内 中部 コンテンツエリア -->
+
+      <!-- ↓フッター内 中部 PC版コンテンツエリア -->
+
+      <article class="footer-middle-wrapper-pc">
+        <div class="footer-middle-content-pc fmc1">
+          企業情報
+          <ul>
+            <li><a href="#">店舗一覧</a></li>
+            <li><a href="#">来店予約</a></li>
+            <li><a href="#">ニュースレター</a></li>
+            <li><a href="#">サスティナビリティ / SDGS</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-content-pc fmc2">
+          ヘルプ
+          <ul>
+            <li><a href="#">よくあるご質問</a></li>
+            <li><a href="#">利用規約 / 法的事項</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表示</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-content-pc fmc3">
+          セントロマンスについて
+          <ul>
+            <li><a href="#">カルチャー</a></li>
+            <li><a href="#">最新ニュース</a></li>
+            <li><a href="#">アプリをダウンロード</a></li>
+          </ul>
+        </div>
+      </article>
+      <!-- ↑フッター内 中部 PC版コンテンツエリア -->
+
+      <!-- ↓フッター内 中部 モバイル版コンテンツエリア -->
+
+      <article class="footer-middle-wrapper-mobile">
+        <div class="footer-middle-content-mobile acordion">企業情報</div>
+        <ul>
+          <li><a href="">店舗一覧</a></li>
+
+          <li><a href="">来店予約</a></li>
+
+          <li><a href="">ニュースレター</a></li>
+
+          <li><a href="">サスティナビリティ / SDGS</a></li>
+
+          <li><a href="#">採用情報</a></li>
+        </ul>
+        <hr class="section-hr" />
+        <div class="footer-middle-content-mobile acordion">ヘルプ</div>
+        <ul>
+          <li><a href="#">よくあるご質問</a></li>
+
+          <li><a href="#">利用規約 / 法的事項</a></li>
+
+          <li><a href="#">プライバシーポリシー</a></li>
+
+          <li><a href="#">特定商取引法に基づく表示</a></li>
+        </ul>
+        <hr class="section-hr" />
+        <div class="footer-middle-content-mobil acordion">
+          セントロマンスについて
+        </div>
+        <ul>
+          <li><a href="#">カルチャー</a></li>
+
+          <li><a href="#">最新ニュース</a></li>
+
+          <li><a href="#">アプリをダウンロード</a></li>
+        </ul>
+      </article>
+      <!-- ↑フッター内 中部 モバイル版コンテンツエリア -->
+
+      <!-- ↑フッター内 中部 コンテンツエリア -->
+
+      <!-- ↓フッター内 下段　商標エリア -->
+
+      <article class="footer-bottom">
+        <div>
+          <p>
+            COPYRIGHT© 2023 St. Romance<br />※当サイトは架空の企業サイトです
+          </p>
+        </div>
+      </article>
+      <!-- ↑フッター内 下段　商標エリア -->
+    </footer>
+    <!-- ↑フッター -->
+
+    <!-- slick jsの読込み -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- slickの設定 -->
+    <script type="text/javascript">
+      $(function () {
+        $('.slick-slider').slick({
+          accessibility: true,
+          autoplay: true,
+          autoplaySpeed: 8000,
+          speed: 400,
+          arrows: false,
+        });
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

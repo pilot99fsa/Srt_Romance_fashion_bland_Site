@@ -1,0 +1,210 @@
+body,
+html {
+  height: auto;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  background-color: white;
+
+  & article {
+    padding: 10px 40px 40px 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 20px 0;
+    }
+  }
+}
+
+select,
+textarea {
+  width: 100%;
+  resize: none;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+}
+select {
+  padding: 5px;
+  @media screen and (max-width: 480px) {
+    padding: 2px;
+  }
+}
+.catalog-headline {
+  padding: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  & h1 {
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  & .product-catalog-jp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & div {
+      width: 30px;
+      padding: 0 5px;
+      @media screen and (max-width: 768px) {
+        width: 20px;
+      }
+    }
+    & h3 {
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.section-catalog {
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    border-radius: 0;
+  }
+
+  & .section-catalog-wrapper {
+    display: flex;
+    height: auto;
+    width: 100%;
+    gap: 40px;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    & .section-catalog {
+      width: 100%;
+      height: auto;
+      &.search {
+        padding: 0;
+        width: 400px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          font-size: 12px;
+        }
+        & .search-content {
+          padding-bottom: 10px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+          &.gender {
+            margin-left: 0;
+          }
+          &.price {
+            width: 80%;
+            @media screen and (max-width: 768px) {
+              width: 50%;
+            }
+            input {
+              width: 40%;
+            }
+          }
+        }
+      }
+      &.products {
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-decoration: none;
+
+        @media screen and (max-width: 1290px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+        @media screen and (max-width: 480px) {
+          border-radius: 0;
+          grid-template-columns: 1fr;
+        }
+
+        & .catalog-card-wrapper {
+          display: block;
+          min-width: 150px;
+          height: auto;
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: -2px 1px 10px 0px rgba(0, 0, 0, 0.1);
+          & .catalog-card-description {
+            padding: 10px;
+
+            & li {
+              margin-bottom: 2px;
+            }
+            & .item_price {
+              display: flex;
+              align-items: end;
+              p {
+                padding-left: 5px;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.catalog-page-nation-wrapper {
+  width: 100%;
+  padding-top: 40px;
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+  }
+
+  & .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination li {
+    margin: 0 5px;
+  }
+
+  .pagination a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+      padding: 2px 5px;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+body,
+html {
+  height: auto;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  background-color: white;
+}
+main article {
+  padding: 10px 40px 40px 40px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main article {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main article {
+    padding: 20px 0;
+  }
+}
+
+.story-headline {
+  padding: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .story-headline h1 {
+    font-size: 18px;
+  }
+}
+.story-headline .historia_of_stromance-jp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.story-headline .historia_of_stromance-jp div {
+  width: 30px;
+  padding: 0 5px;
+}
+@media screen and (max-width: 768px) {
+  .story-headline .historia_of_stromance-jp div {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .story-headline .historia_of_stromance-jp h3 {
+    font-size: 16px;
+  }
+}
+
+.section-story {
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .section-story {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-story {
+    border-radius: 0;
+  }
+}
+.section-story .section-story-headline {
+  max-width: 1200px;
+  justify-content: center;
+  text-align: left;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .section-story .section-story-headline {
+    font-size: 12px;
+  }
+}
+.section-story .section-story-content {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .section-story .section-story-content {
+    display: block;
+  }
+}
+.section-story .section-story-content .section-story-image {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+.section-story .section-story-content .section-story-image .section-story-image-pc {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+}
+.section-story .section-story-content .section-story-image .section-story-image-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .section-story .section-story-content .section-story-image {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  .section-story .section-story-content .section-story-image .section-story-image-pc {
+    display: none;
+  }
+  .section-story .section-story-content .section-story-image .section-story-image-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.section-story .section-story-content .section-story-discription {
+  width: 50%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .section-story .section-story-content .section-story-discription {
+    font-size: 12px;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.section-story.under {
+  margin-top: 20px;
+}
+.section-story.under .section-story-content.under {
+  flex-direction: row-reverse;
+}
+.section-story.under .section-story-content.under .section-story-image {
+  justify-content: left;
+}/*# sourceMappingURL=story.css.map */

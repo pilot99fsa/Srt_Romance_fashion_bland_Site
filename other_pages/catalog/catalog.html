@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="../../index_style/reset.css" />
+
+    <!-- ヘッダーCSS -->
+    <link
+      rel="stylesheet"
+      href="../other_common_css/ocheader_css/ocheader.css"
+    />
+
+    <!-- 個別ページスタイルのCSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./catalog_style/catalog.css    "
+    />
+
+    <!-- フッターCSS -->
+    <link
+      rel="stylesheet"
+      href="../other_common_css/ocfooter_css/ocfooter.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- ページ名 -->
+    <title>St.Romance - セントロマンス公式</title>
+  </head>
+
+  <body>
+    <!-- ↓ヘッダー -->
+
+    <header>
+      <div class="topics-line">
+        <div class="slick-slider">
+          <div class="slick-text text1">
+            <a href="#">NONOCITYで9,000円以上お買い上げの方は送料無料</a>
+          </div>
+          <div class="slick-text text2">
+            <a href="#">新作のフレグランスが新発売</a>
+          </div>
+          <div class="slick-text text3">
+            <a href="#">セントロマンスの名作ブーツが限定復刻</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ↓PC版ヘッダーナビゲーション -->
+
+      <nav class="nav-wrapper-pc">
+        <div class="nav-wrapper-pc-bland_logo-area">
+          <a href="../../index.html">
+            <img
+              class="nav-wrapper-pc-bland_logo"
+              src="../st_romance_logo.png"
+              alt="ブランドロゴ"
+            />
+          </a>
+        </div>
+        <div class="nav-wrapper-content-area">
+          <ul class="nav-content">
+            <li><a href="../news/news.html">NEWS</a></li>
+            <li><a href="#">CATALOG</a></li>
+            <li><a href="../story/story.html">STORY</a></li>
+            <li><a href="../cotact/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ↑PC版ヘッダーナビゲーション -->
+
+      <!-- ↓モバイル版ヘッダーナビゲーション -->
+
+      <nav class="nav-wrapper-mobile" id="js-nav">
+        <div id="nav-wrapper" class="nav-wrapper">
+          <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+          </div>
+          <nav class="sp-nav">
+            <ul>
+              <li><a href="../news/news.html">NEWS</a></li>
+              <li>
+                <hr />
+              </li>
+              <li><a href="#">CATALOG</a></li>
+              <li>
+                <hr />
+              </li>
+              <li><a href="../story/story.html">STORY</a></li>
+              <li>
+                <hr />
+              </li>
+              <li><a href="../cotact/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="black-bg" id="js-black-bg"></div>
+        </div>
+      </nav>
+
+      <!-- ↑モバイル版ヘッダーナビゲーション -->
+    </header>
+    <!-- ↑ヘッダー -->
+
+    <!-- ↓メインコンテンツ -->
+    <main>
+      <!-- ↓768px以下の時は消える -->
+      <!-- モバイル版の時はヘッダーの直下にロゴを置く -->
+      <div class="main-logo-area">
+        <a href="../../index.html" class="link-to-top">
+          <img src="../st_romance_logo.png" alt="セントロマンス" href="/" />
+        </a>
+      </div>
+      <!-- ↑768px以下の時は消える -->
+
+      <article>
+        <!-- ↓カタログページ見出し -->
+        <div class="catalog-headline">
+          <h1>Product Catalog</h1>
+          <div class="product-catalog-jp">
+            <div><hr size="3" noshade color="black" /></div>
+            <h3>総合カタログ</h3>
+            <div><hr size="3" noshade color="black" /></div>
+          </div>
+        </div>
+        <!-- ↑カタログページ見出し -->
+        <div class="section-catalog">
+          <div class="section-catalog-wrapper">
+            <!-- ↓検索フォーム -->
+            <div class="section-catalog search">
+              <form action="/" id="_form" type="search" method="get">
+                <!-- ↓性別 -->
+                <dl class="search-content gender">
+                  <dt>性別&nbsp;/&nbsp;Gender</dt>
+                  <dd>
+                    <input type="radio" name="gender" value="メンズ" />メンズ
+                  </dd>
+                  <dd>
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="ウィメンズ"
+                    />ウィメンズ
+                  </dd>
+                  <dd>
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="ユニセックス"
+                    />ユニセックス
+                  </dd>
+                </dl>
+                <!-- ↑性別 -->
+
+                <!-- ↓アイテム -->
+                <dl class="search-content items">
+                  <dt>アイテム&nbsp;/&nbsp;Items</dt>
+                  <dd>
+                    <select id="item-kind" name="item-kind">
+                      <option value="選択してください">選択してください</option>
+                      <option value="トップス/TOPS">トップス/TOPS</option>
+                      <option value="シャツ/SHIRTS">シャツ/SHIRTS</option>
+                      <option value="ボトムス/BOTTOMS">ボトムス/BOTTOMS</option>
+                      <option value="スカート&ドレス/SKIRT & DRESS">
+                        スカート&ドレス/SKIRT & DRESS
+                      </option>
+                      <option value="ジャケット&コート/JAKCET & COAT">
+                        ジャケット&コート/JAKCET & COAT
+                      </option>
+                      <option value="アンダーウェア/UNDERWEAR">
+                        アンダーウェア/UNDERWEAR
+                      </option>
+                      <option value="シューズ&ヒール/FOOTWEAR">
+                        シューズ&ヒール/FOOTWEAR
+                      </option>
+                      <option value="アクセサリー/ACCESERY">
+                        アクセサリー/ACCESERY
+                      </option>
+                      <option value="フレグランス/FRAGRANCE">
+                        フレグランス/FRAGRANCE
+                      </option>
+                      <option value="バッグ/BAGS">バッグ/BAGS</option>
+                      <option value="ジュエリー/JEWERY">
+                        ジュエリー/JEWERY
+                      </option>
+                      <option value="アイウェア/EYE WEAR">
+                        アイウェア/EYE WEAR
+                      </option>
+                      <option value="化粧類/MAKE UP">化粧類/MAKE UP</option>
+                      <option value="スキンケア/SKIN CARE">
+                        スキンケア/SKIN CARE
+                      </option>
+                      <option value="靴下/SOCKS">靴下/SOCKS</option>
+                    </select>
+                  </dd>
+                </dl>
+                <!-- ↑アイテム -->
+
+                <!-- ↓サイズ -->
+                <dl class="search-content size">
+                  <dt>サイズ&nbsp;/&nbsp;Size</dt>
+                  <dd>
+                    <select id="size-kind" name="size-kind">
+                      <option value="選択してください">選択してください</option>
+                      <option value="XS">XS</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="O">O</option>
+                      <option value="XO">XO</option>
+                    </select>
+                  </dd>
+                </dl>
+                <!-- ↑サイズ -->
+
+                <!-- ↓価格の範囲指定 -->
+                <dl class="search-content price">
+                  <dt>金額の指定&nbsp;/&nbsp;Price</dt>
+                  <dd style="display: flex">
+                    <input
+                      type="number"
+                      value=""
+                      min="0"
+                      max="50000"
+                      step="100"
+                      placeholder="下限"
+                    />
+                    <p>&nbsp;~&nbsp;</p>
+                    <input
+                      type="number"
+                      value=""
+                      min="0"
+                      max="50000"
+                      step="100"
+                      placeholder="上限"
+                    />
+                  </dd>
+                </dl>
+                <!-- ↑価格の範囲指定　-->
+
+                <!-- ↓フリーワード検索　-->
+                <dl class="search-content free-word">
+                  <dt>ワード検索&nbsp;/&nbsp;Word&nbsp;Search</dt>
+                  <dd class="required">
+                    <textarea
+                      id="mail_contents"
+                      name="word-search"
+                      cols="10"
+                      rows="1"
+                      placeholder="入力して下さい"
+                    ></textarea>
+                  </dd>
+                </dl>
+                <!-- ↑フリーワード検索 -->
+              </form>
+            </div>
+
+            <!-- ↓製品カタログ -->
+            <div class="section-catalog products">
+              <!-- ↓プロダクト1 -->
+              <div class="catalog-card-wrapper">
+                <img src="./catalog_image/product_bag.jpg" alt="bag" />
+                <ul class="catalog-card-description description1">
+                  <li>レザーハンドバッグ</li>
+                  <li class="item_price">
+                    <h3>12,000円</h3>
+                    <p>(税抜)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- ↑プロダクト1 -->
+
+              <!-- ↓プロダクト2 -->
+              <div class="catalog-card-wrapper">
+                <img
+                  src="./catalog_image/product_cardigan.jpg"
+                  alt="cardigan"
+                />
+                <ul class="catalog-card-description description2">
+                  <li>カーディガン</li>
+                  <li class="item_price">
+                    <h3>3,400円</h3>
+                    <p>(税抜)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- ↑プロダクト2 -->
+
+              <!-- ↓プロダクト3 -->
+              <div class="catalog-card-wrapper">
+                <img src="./catalog_image/product_dress.jpg" alt="dress" />
+                <ul class="catalog-card-description description3">
+                  <li>ドレス</li>
+                  <li class="item_price">
+                    <h3>7,700円</h3>
+                    <p>(税抜)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- ↑プロダクト3 -->
+
+              <!-- ↓プロダクト4 -->
+              <div class="catalog-card-wrapper">
+                <img
+                  src="./catalog_image/product_fraglance.jpg"
+                  alt="fragrance"
+                />
+                <ul class="catalog-card-description description4">
+                  <li>フレグランス</li>
+                  <li class="item_price">
+                    <h3>7000円</h3>
+                    <p>(税抜)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- ↑プロダクト4 -->
+
+              <!-- ↓プロダクト5 -->
+              <div class="catalog-card-wrapper">
+                <img src="./catalog_image/product_heels.jpg" alt="heels" />
+                <ul class="catalog-card-description description5">
+                  <li>フラワーヒール</li>
+                  <li class="item_price">
+                    <h3>12,000円</h3>
+                    <p>(税抜)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- ↑プロダクト5 -->
+
+              <!-- ↓プロダクト6-->
+              <div class="catalog-card-wrapper">
+                <img src="./catalog_image/product_pants.jpg" alt="pants" />
+                <ul class="catalog-card-description description6">
+                  <li>バギージーンズ</li>
+                  <li class="item_price">
+                    <h3>5,000円</h3>
+                    <p>(税抜)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- ↑プロダクト6 -->
+            </div>
+            <!-- ↑製品カタログ -->
+          </div>
+        </div>
+
+        <!-- ↓ページネーション -->
+        <div class="catalog-page-nation-wrapper" id="nation-wrapper">
+          <ul class="pagination">
+            <li class="prev"><a href="#">前へ</a></li>
+            <li class="page-number"><a href="#">1</a></li>
+            <li class="page-number"><a href="#">2</a></li>
+            <li class="page-number"><a href="#">3</a></li>
+            <li>...</li>
+            <li class="page-number"><a href="#">11</a></li>
+            <li class="next"><a href="#">次へ</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ↑ページネーション -->
+    </main>
+    <!-- ↑メインコンテンツ -->
+
+    <!-- ↓フッター -->
+
+    <footer>
+      <!-- ↓フッター内 上段 SNSリンクエリア -->
+
+      <article class="footer-top">
+        <div class="footer-sns-headline">
+          <h2>FOLLOW US</h2>
+        </div>
+        <div class="sns-link-wrpper">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="sns_favicon"
+              src="./catalog_image/SNS_logos/Instagram_Glyph_Gradient.png"
+              alt="instagram"
+          /></a>
+          <a href="#" target="_blank" rel="noopene noreferrerr"
+            ><img
+              class="sns_favicon"
+              src="./catalog_image/SNS_logos/f_logo_RGB-Blue_1024.png"
+              alt="facebook"
+          /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="sns_favicon"
+              src="./catalog_image/SNS_logos/LINE_Brand_icon.png"
+              alt="LINE"
+          /></a>
+        </div>
+      </article>
+      <!-- ↑フッター内 上段 SNSリンクエリア -->
+
+      <!-- ↓フッター内 中部 コンテンツエリア -->
+
+      <!-- ↓フッター内 中部 PC版コンテンツエリア -->
+
+      <article class="footer-middle-wrapper-pc">
+        <div class="footer-middle-content-pc fmc1">
+          企業情報
+          <ul>
+            <li><a href="#">店舗一覧</a></li>
+            <li><a href="#">来店予約</a></li>
+            <li><a href="#">ニュースレター</a></li>
+            <li><a href="#">サスティナビリティ / SDGS</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-content-pc fmc2">
+          ヘルプ
+          <ul>
+            <li><a href="#">よくあるご質問</a></li>
+            <li><a href="#">利用規約 / 法的事項</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表示</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-content-pc fmc3">
+          セントロマンスについて
+          <ul>
+            <li><a href="#">カルチャー</a></li>
+            <li><a href="#">最新ニュース</a></li>
+            <li><a href="#">アプリをダウンロード</a></li>
+          </ul>
+        </div>
+      </article>
+      <!-- ↑フッター内 中部 PC版コンテンツエリア -->
+
+      <!-- ↓フッター内 中部 モバイル版コンテンツエリア -->
+
+      <article class="footer-middle-wrapper-mobile">
+        <div class="footer-middle-content-mobile acordion">企業情報</div>
+        <ul>
+          <li><a href="">店舗一覧</a></li>
+
+          <li><a href="">来店予約</a></li>
+
+          <li><a href="">ニュースレター</a></li>
+
+          <li><a href="">サスティナビリティ / SDGS</a></li>
+
+          <li><a href="#">採用情報</a></li>
+        </ul>
+        <hr class="section-hr" />
+        <div class="footer-middle-content-mobile acordion">ヘルプ</div>
+        <ul>
+          <li><a href="#">よくあるご質問</a></li>
+
+          <li><a href="#">利用規約 / 法的事項</a></li>
+
+          <li><a href="#">プライバシーポリシー</a></li>
+
+          <li><a href="#">特定商取引法に基づく表示</a></li>
+        </ul>
+        <hr class="section-hr" />
+        <div class="footer-middle-content-mobile acordion">
+          セントロマンスについて
+        </div>
+        <ul>
+          <li><a href="#">カルチャー</a></li>
+
+          <li><a href="#">最新ニュース</a></li>
+
+          <li><a href="#">アプリをダウンロード</a></li>
+        </ul>
+      </article>
+      <!-- ↑フッター内 中部 モバイル版コンテンツエリア -->
+
+      <!-- ↑フッター内 中部 コンテンツエリア -->
+
+      <!-- ↓フッター内 下段　商標エリア -->
+
+      <article class="footer-bottom">
+        <div>
+          <p>
+            COPYRIGHT© 2023 St. Romance<br />※当サイトは架空の企業サイトです
+          </p>
+        </div>
+      </article>
+      <!-- ↑フッター内 下段　商標エリア -->
+    </footer>
+
+    <!-- ↑フッター -->
+
+    <!-- slick jsの読込み -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- slickの設定 -->
+    <script type="text/javascript">
+      $(function () {
+        $('.slick-slider').slick({
+          accessibility: true,
+          autoplay: true,
+          autoplaySpeed: 8000,
+          speed: 400,
+          arrows: false,
+        });
+      });
+    </script>
+    <script src="../../index.js"></script>
+  </body>
+</html>

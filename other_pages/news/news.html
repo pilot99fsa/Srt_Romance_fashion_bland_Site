@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="../../index_style/reset.css" />
+
+    <!-- ヘッダーCSS -->
+    <link
+      rel="stylesheet"
+      href="../other_common_css/ocheader_css/ocheader.css"
+    />
+
+    <!-- 個別ページスタイルのCSS -->
+    <link rel="stylesheet" type="text/css" href="./news_style/news.css" />
+
+    <!-- モーダルのCSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./news_modal_style/news-modal.css"
+    />
+
+    <!-- フッターCSS -->
+    <link
+      rel="stylesheet"
+      href="../other_common_css/ocfooter_css/ocfooter.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- ページ名 -->
+    <title>St.Romance - セントロマンス公式</title>
+  </head>
+
+  <body>
+    <!-- ↓ヘッダー -->
+
+    <header>
+      <div class="topics-line">
+        <div class="slick-slider">
+          <div class="slick-text text1">
+            <a href="#">NONOCITYで9,000円以上お買い上げの方は送料無料</a>
+          </div>
+          <div class="slick-text text2">
+            <a href="#">新作のフレグランスが新発売</a>
+          </div>
+          <div class="slick-text text3">
+            <a href="#">セントロマンスの名作ブーツが限定復刻</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ↓PC版ヘッダーナビゲーション -->
+
+      <nav class="nav-wrapper-pc">
+        <div class="nav-wrapper-pc-bland_logo-area">
+          <a href="../../index.html">
+            <img
+              class="nav-wrapper-pc-bland_logo"
+              src="../st_romance_logo.png"
+              alt="ブランドロゴ"
+            />
+          </a>
+        </div>
+        <div class="nav-wrapper-content-area">
+          <ul class="nav-content">
+            <li><a href="#">NEWS</a></li>
+            <li><a href="../catalog/catalog.html">CATALOG</a></li>
+            <li><a href="../story/story.html">STORY</a></li>
+            <li><a href="../cotact/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ↑PC版ヘッダーナビゲーション -->
+
+      <!-- ↓モバイル版ヘッダーナビゲーション -->
+
+      <nav class="nav-wrapper-mobile" id="js-nav">
+        <div id="nav-wrapper" class="nav-wrapper">
+          <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+          </div>
+          <nav class="sp-nav">
+            <ul>
+              <li><a href="#">NEWS</a></li>
+
+              <li>
+                <hr />
+              </li>
+              <li><a href="../catalog/catalog.html">CATALOG</a></li>
+
+              <li>
+                <hr />
+              </li>
+              <li><a href="../story/story.html">STORY</a></li>
+
+              <li>
+                <hr />
+              </li>
+              <li><a href="../cotact/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="black-bg" id="js-black-bg"></div>
+        </div>
+      </nav>
+
+      <!-- ↑モバイル版ヘッダーナビゲーション -->
+    </header>
+    <!-- ↑ヘッダー -->
+
+    <!-- ↓メインコンテンツ -->
+
+    <main>
+      <!-- ↓768px以下の時は消える -->
+      <!-- モバイル版の時はヘッダーの直下にロゴを置く -->
+      <div class="main-logo-area">
+        <a href="../../index.html">
+          <img src="../st_romance_logo.png" alt="セントロマンス" />
+        </a>
+      </div>
+      <!-- ↑768px以下の時は消える -->
+
+      <!-- ↓注目のコンテンツエリア -->
+
+      <article>
+        <div class="news-headline">
+          <h1>News</h1>
+          <h3>ニュース</h3>
+        </div>
+
+        <div class="section-news">
+          <!-- ↓カードコンテンツ1 -->
+          <div class="news-card-wrapper">
+            <div class="news-card-image image1"></div>
+            <div class="news-card-description description1">
+              <h3>【コラボキャンペーン情報】</h3>
+              <br />
+              <p>
+                &ensp;今話題の人気女優〇〇&ensp;〇〇がドラマ〇〇〇〇〇〇にて着用したコラボアパレルについてはこちらのページにて紹介しております。
+              </p>
+              <button class="modal-open" id="modal-open-1">詳しく見る</button>
+            </div>
+
+            <!-- ↓モーダルウインドウ -->
+            <div class="card-modal" id="card-modal-1">
+              <div class="card-modal-wrapper">
+                <div class="news-card-modal-image image1"></div>
+                <div class="news-card-modal-description description1">
+                  <h3>【コラボキャンペーン情報】</h3>
+                  <br />
+                  <p>
+                    &ensp;今話題の人気女優〇〇&ensp;〇〇がドラマ〇〇〇〇〇〇にて着用したコラボアパレルについてはこちらのページにて紹介しております。
+                  </p>
+                  <button class="modal-close" id="modal-close-1">閉じる</button>
+                </div>
+              </div>
+            </div>
+            <!-- ↑モーダルウインドウ -->
+          </div>
+
+          <!-- ⇧カードコンテンツ1 -->
+
+          <!-- ↓カードコンテンツ2 -->
+          <div class="news-card-wrapper">
+            <div class="news-card-image image2"></div>
+            <div class="news-card-description description2">
+              <h3>【サマーキャンペーン開催中】</h3>
+              <br />
+              <p>
+                &ensp;店舗にて12,000円以上お買い上げの方には各店舗先着200名様に*******をプレゼント!
+              </p>
+              <button class="modal-open" id="modal-open-2">詳しく見る</button>
+            </div>
+            <!-- ↓モーダルウインドウ -->
+            <div class="card-modal" id="card-modal-2">
+              <div class="card-modal-wrapper">
+                <div class="news-card-modal-image image2"></div>
+                <div class="news-card-modal-description description2">
+                  <h3>【サマーキャンペーン開催中】</h3>
+                  <br />
+                  <p>
+                    &ensp;店舗にて12,000円以上お買い上げの方には各店舗先着200名様に*******をプレゼント!
+                  </p>
+                  <button class="modal-close" id="modal-close-2">閉じる</button>
+                </div>
+              </div>
+            </div>
+            <!-- ↑モーダルウインドウ -->
+          </div>
+
+          <!-- ⇧カードコンテンツ2 -->
+
+          <!-- ↓カードコンテンツ3 -->
+          <div class="news-card-wrapper">
+            <div class="news-card-image image3"></div>
+            <div class="news-card-description description3">
+              <h3>【momocityキャンペーン情報】</h3>
+              <br />
+              <p>
+                &ensp;momocityにて9,000円以上お買い上げで送料無料キャンペーンを実施中です。また、momocity限定のセントロマンスのキャップも発売中です。
+              </p>
+              <button class="modal-open" id="modal-open-3">詳しく見る</button>
+            </div>
+            <!-- ↓モーダルウインドウ -->
+            <div class="card-modal" id="card-modal-3">
+              <div class="card-modal-wrapper">
+                <div class="news-card-modal-image image3"></div>
+                <div class="news-card-modal-description description3">
+                  <h3>【momocityキャンペーン情報】</h3>
+                  <br />
+                  <p>
+                    &ensp;momocityにて9,000円以上お買い上げで送料無料キャンペーンを実施中です。また、momocity限定のセントロマンスのキャップも発売中です。
+                  </p>
+                  <button class="modal-close" id="modal-close-3">閉じる</button>
+                </div>
+              </div>
+            </div>
+            <!-- ↑モーダルウインドウ -->
+          </div>
+
+          <!-- ⇧カードコンテンツ3 -->
+
+          <!-- ↓カードコンテンツ4 -->
+          <div class="news-card-wrapper">
+            <div class="news-card-image image4"></div>
+            <div class="news-card-description description4">
+              <h3>【新作発売情報】</h3>
+              <br />
+              <p>
+                &ensp;汗でベタつく夏の季節にピッタリな新作フレグランスが新発売。
+              </p>
+              <button class="modal-open" id="modal-open-4">詳しく見る</button>
+            </div>
+            <!-- ↓モーダルウインドウ -->
+            <div class="card-modal" id="card-modal-4">
+              <div class="card-modal-wrapper">
+                <div class="news-card-modal-image image4"></div>
+                <div class="news-card-modal-description description4">
+                  <h3>【新作発売情報】</h3>
+                  <br />
+                  <p>
+                    &ensp;汗でベタつく夏の季節にピッタリな新作フレグランスが新発売。
+                  </p>
+
+                  <button class="modal-close" id="modal-close-4">閉じる</button>
+                </div>
+              </div>
+            </div>
+            <!-- ↑モーダルウインドウ -->
+          </div>
+
+          <!-- ⇧カードコンテンツ4 -->
+
+          <!-- ↓カードコンテンツ5 -->
+          <div class="news-card-wrapper">
+            <div class="news-card-image image5"></div>
+            <div class="news-card-description description5">
+              <h3>【公式ストアキャンペーン】</h3>
+              <br />
+              <p>
+                &ensp;セントロマンス公式通販サイトにてお買い上げ合計金額が9,000円以上の方は送料無料キャンペーンを実施中!
+              </p>
+
+              <button class="modal-open" id="modal-open-5">詳しく見る</button>
+            </div>
+            <!-- ↓モーダルウインドウ -->
+            <div class="card-modal" id="card-modal-5">
+              <div class="card-modal-wrapper">
+                <div class="news-card-modal-image image5"></div>
+                <div class="news-card-modal-description description5">
+                  <h3>【公式ストアキャンペーン】</h3>
+                  <br />
+                  <p>
+                    &ensp;セントロマンス公式通販サイトにてお買い上げ合計金額が9,000円以上の方は送料無料キャンペーンを実施中!
+                  </p>
+
+                  <button class="modal-close" id="modal-close-5">閉じる</button>
+                </div>
+              </div>
+            </div>
+            <!-- ↑モーダルウインドウ -->
+          </div>
+
+          <!-- ⇧カードコンテンツ5 -->
+
+          <!-- ↓カードコンテンツ6 -->
+          <div class="news-card-wrapper">
+            <div class="news-card-image image6"></div>
+            <div class="news-card-description description6">
+              <h3>【復刻キャンペーン】</h3>
+              <br />
+              <p>
+                &ensp;202X年の11月中旬にて2001年から2004年までの間に販売されたセントロマンスの名作ブーツが完全受注生産にて限定販売します。続報についてはしばらくお待ちください。
+              </p>
+              <button class="modal-open" id="modal-open-6">詳しく見る</button>
+            </div>
+            <!-- ↓モーダルウインドウ -->
+            <div class="card-modal" id="card-modal-6">
+              <div class="card-modal-wrapper">
+                <div class="news-card-modal-image image6"></div>
+                <div class="news-card-modal-description description6">
+                  <h3>【復刻キャンペーン】</h3>
+                  <br />
+                  <p>
+                    &ensp;202X年の11月中旬にて2001年から2004年までの間に販売されたセントロマンスの名作ブーツが完全受注生産にて限定販売します。続報についてはしばらくお待ちください。
+                  </p>
+                  <button class="modal-close" id="modal-close-6">閉じる</button>
+                </div>
+              </div>
+            </div>
+            <!-- ↑モーダルウインドウ -->
+          </div>
+
+          <!-- ⇧カードコンテンツ6 -->
+        </div>
+
+        <!-- ↓ページネーション -->
+        <div class="news-page-nation-wrapper" id="nation-wrapper">
+          <ul class="pagination">
+            <li class="prev"><a href="#">前へ</a></li>
+            <li class="page-number"><a href="#">1</a></li>
+            <li class="page-number"><a href="#">2</a></li>
+            <li class="page-number"><a href="#">3</a></li>
+            <li>...</li>
+            <li class="page-number"><a href="#">11</a></li>
+            <li class="next"><a href="#">次へ</a></li>
+          </ul>
+        </div>
+        <!-- ↑ページネーション -->
+      </article>
+      <!-- ↑注目のコンテンツエリア -->
+    </main>
+    <!-- ↑メインコンテンツ -->
+
+    <footer>
+      <!-- ↓フッター内 上段 SNSリンクエリア -->
+
+      <article class="footer-top">
+        <div class="footer-sns-headline">
+          <h2>FOLLOW US</h2>
+        </div>
+        <div class="sns-link-wrpper">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="sns_favicon"
+              src="./news-image/SNS_logos/Instagram_Glyph_Gradient.png"
+              alt="instagram"
+          /></a>
+          <a href="#" target="_blank" rel="noopene noreferrerr"
+            ><img
+              class="sns_favicon"
+              src="./news-image/SNS_logos/f_logo_RGB-Blue_1024.png"
+              alt="facebook"
+          /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="sns_favicon"
+              src="./news-image/SNS_logos/LINE_Brand_icon.png"
+              alt="LINE"
+          /></a>
+        </div>
+      </article>
+      <!-- ↑フッター内 上段 SNSリンクエリア -->
+
+      <!-- ↓フッター内 中部 コンテンツエリア -->
+
+      <!-- ↓フッター内 中部 PC版コンテンツエリア -->
+
+      <article class="footer-middle-wrapper-pc">
+        <div class="footer-middle-content-pc fmc1">
+          企業情報
+          <ul>
+            <li><a href="#">店舗一覧</a></li>
+            <li><a href="#">来店予約</a></li>
+            <li><a href="#">ニュースレター</a></li>
+            <li><a href="#">サスティナビリティ / SDGS</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-content-pc fmc2">
+          ヘルプ
+          <ul>
+            <li><a href="#">よくあるご質問</a></li>
+            <li><a href="#">利用規約 / 法的事項</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表示</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-content-pc fmc3">
+          セントロマンスについて
+          <ul>
+            <li><a href="#">カルチャー</a></li>
+            <li><a href="#">最新ニュース</a></li>
+            <li><a href="#">アプリをダウンロード</a></li>
+          </ul>
+        </div>
+      </article>
+      <!-- ↑フッター内 中部 PC版コンテンツエリア -->
+
+      <!-- ↓フッター内 中部 モバイル版コンテンツエリア -->
+
+      <article class="footer-middle-wrapper-mobile">
+        <div class="footer-middle-content-mobile acordion">企業情報</div>
+        <ul>
+          <li><a href="">店舗一覧</a></li>
+
+          <li><a href="">来店予約</a></li>
+
+          <li><a href="">ニュースレター</a></li>
+
+          <li><a href="">サスティナビリティ / SDGS</a></li>
+
+          <li><a href="#">採用情報</a></li>
+        </ul>
+        <hr class="section-hr" />
+        <div class="footer-middle-content-mobile acordion">ヘルプ</div>
+        <ul>
+          <li><a href="#">よくあるご質問</a></li>
+
+          <li><a href="#">利用規約 / 法的事項</a></li>
+
+          <li><a href="#">プライバシーポリシー</a></li>
+
+          <li><a href="#">特定商取引法に基づく表示</a></li>
+        </ul>
+        <hr class="section-hr" />
+        <div class="footer-middle-content-mobile acordion">
+          セントロマンスについて
+        </div>
+        <ul>
+          <li><a href="#">カルチャー</a></li>
+
+          <li><a href="#">最新ニュース</a></li>
+
+          <li><a href="#">アプリをダウンロード</a></li>
+        </ul>
+      </article>
+      <!-- ↑フッター内 中部 モバイル版コンテンツエリア -->
+
+      <!-- ↑フッター内 中部 コンテンツエリア -->
+
+      <!-- ↓フッター内 下段　商標エリア -->
+
+      <article class="footer-bottom">
+        <div>
+          <p>
+            COPYRIGHT© 2023 St. Romance<br />※当サイトは架空の企業サイトです
+          </p>
+        </div>
+      </article>
+      <!-- ↑フッター内 下段　商標エリア -->
+    </footer>
+
+    <!-- ↑フッター -->
+
+    <!-- slick jsの読込み -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- slickの設定 -->
+    <script type="text/javascript">
+      $(function () {
+        $('.slick-slider').slick({
+          accessibility: true,
+          autoplay: true,
+          autoplaySpeed: 8000,
+          speed: 400,
+          arrows: false,
+        });
+      });
+    </script>
+    <script src="../../index.js"></script>
+    <!-- モーダルウインドウのJavaScript -->
+    <script src="news.js"></script>
+  </body>
+</html>

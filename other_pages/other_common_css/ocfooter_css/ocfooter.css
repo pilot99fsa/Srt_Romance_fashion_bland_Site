@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* フッターの基礎スタイル */
+footer {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  /* レスポンシブ設定
+  　　ディスプレイの幅966pxを境に切り替わり */
+}
+footer .footer-middle-wrapper-mobile {
+  display: none;
+}
+@media screen and (max-width: 966px) {
+  footer .footer-middle-wrapper-pc {
+    display: none;
+  }
+  footer .footer-middle-wrapper-mobile {
+    display: block;
+  }
+}
+
+/* ↓フッター内の上下(SNSリンクエリアと商標エリア)の共通スタイル */
+.footer-top,
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  background-color: aliceblue;
+  display: flex;
+  text-align: center;
+}
+
+.footer-sns-headline {
+  padding-top: 5px;
+}
+
+/* SNSリンクエリアのスタイル */
+.footer-top {
+  flex-direction: column;
+}
+.footer-top .sns-link-wrpper {
+  display: flex;
+  padding: 10px;
+  gap: 32px;
+  justify-content: center;
+}
+.footer-top .sns-link-wrpper img {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 768px) {
+  .footer-top .sns-link-wrpper img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.footer-top .sns-link-wrpper img :hover {
+  cursor: pointer;
+}
+
+/* 商標エリアのスタイル */
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer-middle-wrapper-pc {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.footer-middle-wrapper-pc .footer-middle-content-pc {
+  width: 320px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+.footer-middle-wrapper-pc .footer-middle-content-pc ul {
+  list-style-type: none;
+}
+.footer-middle-wrapper-pc .footer-middle-content-pc ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer-middle-wrapper-pc .footer-middle-content-pc ul a:visited {
+  color: white;
+}
+.footer-middle-wrapper-pc .footer-middle-content-pc ul a:hover {
+  opacity: 0.5;
+}
+
+.footer-middle-wrapper-mobile {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+}
+.footer-middle-wrapper-mobile .footer-middle-content-mobile:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.footer-middle-wrapper-mobile .section-hr {
+  margin: 20px 0;
+}
+.footer-middle-wrapper-mobile ul {
+  display: none;
+}
+.footer-middle-wrapper-mobile li {
+  padding: 10px;
+  cursor: pointer;
+}
+.footer-middle-wrapper-mobile li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-middle-wrapper-mobile li a:visited {
+  color: white;
+}
+.footer-middle-wrapper-mobile li a:hover {
+  opacity: 0.5;
+}/*# sourceMappingURL=ocfooter.css.map */
