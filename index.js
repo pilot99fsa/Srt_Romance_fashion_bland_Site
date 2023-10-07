@@ -8,7 +8,7 @@ $(function () {
         (function () {
           const fh = document.getElementById("fixed-header");
           window.addEventListener("scroll", () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 20) {
               fh.classList.add("is-show");
             } else {
               fh.classList.remove("is-show");
